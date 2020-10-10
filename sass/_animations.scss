@@ -1,0 +1,21 @@
+@keyframes anime {
+    from {
+        opacity: 0;
+        filter: saturate(50%) blur(10px) hue-rotate(280deg);
+    }
+
+    to{
+        opacity: 1;
+        filter: saturate(0) blur(0px) hue-rotate(0deg);
+    }
+}
+
+@keyframes color {
+    from {
+        background-color: rgb(14, 136, 130);
+    }
+
+    to{
+        background-color: rgb(236, 144, 39);
+    }
+}

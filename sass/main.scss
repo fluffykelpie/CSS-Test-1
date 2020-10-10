@@ -1,0 +1,96 @@
+@import "reset";
+@import "animations";
+@import "variables";
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgb(249, 168, 47);
+    animation: color 6s ease-in-out 5s;
+    height: 75%;
+    width: 75%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template: repeat(4, auto) /  repeat(3, minmax(75px, 1fr));
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i"
+    "j k l";
+}
+
+.box {
+    background-color: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: anime 3s ease-in-out;
+}
+
+.box:nth-child(1){
+    animation: anime 3s ease-in-out;
+    grid-area: a;
+}
+
+.box:nth-child(2){
+    animation-delay: calc(1 * #{$time});
+    grid-area: b;
+}
+
+.box:nth-child(3){
+    animation-delay: calc(2 * #{$time});
+    grid-area: c;
+}
+
+.box:nth-child(4){
+    animation-delay: calc(9 * #{$time});
+    grid-area: d;
+  
+}
+
+.box:nth-child(5){
+    animation-delay: calc(10 * #{$time});
+    grid-area: e;
+   
+}
+
+.box:nth-child(6){
+    animation-delay: calc(3 * #{$time});
+    grid-area: f;
+}
+
+.box:nth-child(7){
+    animation-delay: calc(8 * #{$time});
+    grid-area: g;
+}
+
+.box:nth-child(8){
+    animation-delay: calc(11 * #{$time});
+    grid-area: h;
+}
+
+.box:nth-child(9){
+    animation-delay: calc(4 * #{$time});
+    grid-area: i;
+}
+
+.box:nth-child(10){
+    animation-delay: calc(7 * #{$time});
+    grid-area: j;
+}
+
+.box:nth-child(11){
+    animation-delay: calc(6 * #{$time});
+    grid-area: k;
+}
+
+.box:nth-child(12){
+    animation-delay: calc(5 * #{$time});
+    grid-area: l;
+}
